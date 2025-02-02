@@ -40,3 +40,41 @@ a {
     color-scheme: dark;
   }
 }
+
+main {
+  margin: 24px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.justified-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+strong {
+  color: #5BD2DC;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #4B8085,
+}
+
+.abt-back {
+  width: 200;
+  height: 300; 
+  border-width: 5; 
+  border-color: #5BD2DC20;
+}

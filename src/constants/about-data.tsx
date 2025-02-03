@@ -5,8 +5,8 @@ export const abtData = [
         "<div>I was born and raised in San Jose California! I grew up in the heart of <strong>Silicon Valley</strong>, though I never thought I’d end up in tech. As a kid, I just wanted to be outside - not fiddling with the family computer.</div><br/><div>That all changed though when I went to <strong>UC Santa Cruz</strong> and took a mandatory Python class. It was there something clicked and I discovered my passion for web and app development.</div><br/><div>Though I didn’t realize at the time, that class ended up being the turning point that set me on the path to becoming a <strong>Business Owner</strong> and <strong>UX engineer</strong>.</div>",
       img: "/san-jose.png",
       alt: "San Jose Bay Area",
-      width: 480,
-      height: 250,
+      width: 430,
+      height: 230,
       imgLeft: true,
     },
     {
@@ -40,4 +40,5 @@ export const abtData = [
       imgLeft: false,
     },
   ];
+  
   

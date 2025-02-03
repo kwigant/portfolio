@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Anchor, Box, Container, Group } from '@mantine/core';
-import classes from '../styles/header.module.css';
+import classes from '../../styles/header.module.css';
 import { useRouter } from 'next/router';
 
 const mainLinks = [

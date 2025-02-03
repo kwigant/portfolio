@@ -1,4 +1,5 @@
-import { Header } from "@/components/header";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
 import "@/styles/globals.css";
 import { createTheme, MantineProvider, rem } from "@mantine/core";
 import type { AppProps } from "next/app";
@@ -11,40 +12,6 @@ const poppins = Poppins({
 });
 
 const theme = createTheme({
-  colors: {
-    // Add your color
-    deepBlue: [
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-      '#4B8085',
-    ],
-    // or replace default theme color
-    blue: [
-      '#eef3ff',
-      '#dee2f2',
-      '#bdc2de',
-      '#98a0ca',
-      '#7a84ba',
-      '#6672b0',
-      '#5c68ac',
-      '#4c5897',
-      '#424e88',
-      '#364379',
-    ],
-  },
-
-  shadows: {
-    md: '1px 1px 3px rgba(0, 0, 0, .25)',
-    xl: '5px 5px 3px rgba(0, 0, 0, .25)',
-  },
-
   headings: {
     fontFamily: 'Poppins, sans-serif',
     sizes: {
@@ -60,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className={poppins.className}>
         <Header/>
         <Component {...pageProps} />
+        <Footer/>
       </main>
     </MantineProvider>
   );

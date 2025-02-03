@@ -1,11 +1,12 @@
 .header {
-    height: auto;
+    height: 64;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid lightgray;
+    background-color: white;
+    border-bottom: 1px solid #00000020;
 }
 
 .links {
@@ -34,4 +35,8 @@
       font-weight: bold;
       border-bottom-color: #4B8085;
     }
+}
+
+.mainLink:last-child {
+  margin-right: 0;
 }

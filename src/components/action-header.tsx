@@ -8,19 +8,21 @@ export type actionHeaderProps = {
   subtitle?: string;
   description: string;
   img: string;
+  width: number;
+  height: number;
   alt: string;
 };
 
 export default function ActionHeader(props: actionHeaderProps) {
   return (
-    <div className={abtstyle.container} style={{marginTop: 200, marginBottom: 150}}>
-      <Image alt="san jose bay area" height={250} width={480} src={props.img} />
-      <div className="column" style={{ marginLeft: 48 }}>
-        <Title style={{ color: "#4B8085", fontSize: 64 }}>
+    <div className={abtstyle['inner-container']} style={{marginTop: 140, marginBottom: 100}}>
+      <Image alt="san jose bay area" height={props.height} width={props.width} src={props.img} />
+      <div className="column" style={{ marginLeft: 48, maxWidth: 660 }}>
+        <Title className="title-large">
           {props.title}
         </Title>
         {props.subtitle && (
-          <Title style={{ color: "#4B8085", fontWeight: 200, fontSize: 38 }}>
+          <Title className="title-thin">
             {props.subtitle}
           </Title>
         )}

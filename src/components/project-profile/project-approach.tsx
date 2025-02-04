@@ -1,5 +1,5 @@
 import { projectData } from "@/constants/types";
-import styles from "../../styles/project.module.css";
+import styles from "@/styles/project.module.css";
 import parse from "html-react-parser";
 import { Title } from "@mantine/core";
 
@@ -15,11 +15,11 @@ export default function ProjectApproach(props: projectData) {
     return "My Approach"
   }
     return (
-      <div>
+      <div className={styles['profile-spacing']}>
         <Title className="title">{getTitle()}</Title>
         <div
           className="justified-row"
-          style={{ marginBottom: 48 }}
+          style={{ marginBottom: 48, alignItems: 'flex-start' }}
         >
           {props.approach.map((a, i) => {
             return (

@@ -13,9 +13,8 @@ export default function Profile() {
     return pd.id === id;
   });
 
-  console.log(profile[0] as projectData);
   return (
-    <div>
+    <div style={{marginRight: 96, marginLeft: 96}}>
       <ProjectHeader {...(profile[0] as projectData)} />
       <ProjectDetails {...(profile[0] as projectData)} />
       <ProjectApproach {...(profile[0] as projectData)} />

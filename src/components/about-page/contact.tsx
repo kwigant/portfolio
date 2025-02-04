@@ -1,22 +1,18 @@
 import { Button, Title } from "@mantine/core";
 import Image from "next/image";
-import abtstyle from "../../styles/about.module.css";
+import abtstyle from "@/styles/about.module.css";
 
 export default function ContactContentCard() {
   return (
-    <div
-      className={abtstyle['contact-container']}
-    >
+    <div className={abtstyle["contact-container"]}>
       <div className={abtstyle.line}></div>
 
-      <div className={abtstyle.container}>
-        <div className="column">
-          <Title className="title">
-            Lets Get in Touch!
-          </Title>
-          I am currently looking for new job opportunities! I am in the San Jose
-          / San Francisco Bay Area though I am open to relocating / going remote
-          if necessary. Connect with me if you’re interested!
+     
+        <div className="column" style={{marginRight: 128, marginLeft: 128}}>
+          <Title className="title">Lets Get in Touch!</Title>I am currently
+          looking for new job opportunities! I am in the San Jose / San
+          Francisco Bay Area though I am open to relocating / going remote if
+          necessary. Connect with me if you’re interested!
           <div className="justified-row" style={{ marginTop: 64 }}>
             <li>
               <Image
@@ -42,13 +38,9 @@ export default function ContactContentCard() {
             </li>
           </div>
         </div>
-      </div>
-      <div className={abtstyle.line} style={{ height: 100 }}></div>
-      <Button
-       className="show-more-btn"
-      >
-        Scroll Up for Less
-      </Button>
+      
+      <div className={abtstyle.line} style={{ marginTop: 48, height: 100 }}></div>
+      <Button className="show-more-btn">Scroll Up for Less</Button>
     </div>
   );
 }

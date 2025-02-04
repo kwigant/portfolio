@@ -5,7 +5,7 @@ import projectStyles from "@/styles/project.module.css";
 
 export default function ProjectHeader(props: projectData) {
   return (
-    <div className="row" style={{ marginTop: 48, marginBottom: 48 }}>
+    <div className="row" style={{ marginTop: 48, marginBottom: 48, }}>
       <Image width={172} height={172} alt={props.title} src={props.img} />
       <div className="column" style={{ marginLeft: 48 }}>
         <div className="row">

@@ -6,15 +6,15 @@ import projectStyles from "@/styles/project.module.css";
 
 export default function ProjectListItem(props: project) {
     return (
-        <Link href={`/projects/${props.id}`} className="row" style={{cursor: 'pointer',marginTop: 48, marginBottom: 48}}>
-            <Image width={172} height={172} alt={props.title} src={props.img}/>
-            <div className="column" style={{marginLeft: 48}}>
+        <Link href={`/projects/${props.id}`} className="row" style={{ alignItems: 'center', cursor: 'pointer',marginTop: 48, marginBottom: 48}}>
+            <Image width={180} height={180} alt={props.title} src={props.img}/>
+            <div className="column" style={{marginLeft: 48, marginRight: 48}}>
                 <Title className="title-thin">{props.title}</Title>
                 {props.subtitle && <><div>{props.subtitle}</div><br/></>}
-                <div>{props.description}</div>
-                <div className="row">{props.tags.map((t, i) => <div className={projectStyles.tag} key={i}>{t}</div>)}</div>
+                <div style={{maxWidth: 800, marginBottom: 8}}>{props.description}</div>
+                <div className="row" >{props.tags.map((t, i) => <div className={projectStyles.tag} key={i}>{t}</div>)}</div>
             </div>
-            <Image width={30} height={30} alt={props.title} src={'/chevron.png'}/>
+            <Image width={22} height={22} alt={props.title} src={'/chevron.png'}/>
 
         </Link>
     )

@@ -2,6 +2,7 @@
 .approach-number-1, .approach-number-2, .approach-number-3 {
     width: 42px;
     height: 42px;
+    margin: 12px 0;
     border-radius: 30px;
     font-size: 32px;
     font-weight: bold;
@@ -25,21 +26,27 @@
     color: white;
 }
 
+.approach-text-1,
+.approach-text-2,
+.approach-text-3 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
 .approach-text-1 {
     color: #4B8085;
-    font-weight: bold;
 }
 
 .approach-text-2 {
     color: #5BD2DC;
-    font-weight: bold;
-
 }
 
 .approach-text-3 {
     color: #FFA984;
-    font-weight: bold;
+}
 
+.profile-spacing {
+    margin: 96px 0;
 }
 
 /* project details */
@@ -51,15 +58,18 @@
 
 .deliverables {
     grid-column: 1 / 3;
+    max-width: 650px;
 }
 
 .date {
     grid-column: 4;
     display: flex;
     flex-direction: column;
+    max-width: 175px;
 }
 
 .stack {
+    max-width: 214px;
     grid-column: 5;
     display: flex;
     flex-direction: column;
@@ -68,10 +78,23 @@
 /* project list item */
 
 
+/* project more */
+.disclaimer {
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    padding: 24px;
+}
+
+.disclaimer-bold {
+    color: black;
+    font-weight: bold;
+}
+
 /* project profile */
 .tag, .tag-orange {
     border-radius: 24;
-    padding: 8 20;
+    padding: 4 20;
+    font-size: 14px;
     margin: 12 16 0 0;
 }
 
@@ -80,5 +103,7 @@
 }
 
 .tag-orange {
+    margin-left: 24px;
+    margin-bottom: 8px;
     background-color: #FFD8BA;
 }

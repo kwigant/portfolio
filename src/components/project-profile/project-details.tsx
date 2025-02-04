@@ -5,7 +5,7 @@ import projectStyles from "@/styles/project.module.css";
 export default function ProjectDetails(props: projectData) {
   if (props.projectDetails)
     return (
-      <div>
+      <div className={projectStyles["profile-spacing"]}>
         <Title className="title">Project Details</Title>
         <div className={projectStyles["details-grid"]}>
           <div className={projectStyles["deliverables"]}>
@@ -14,24 +14,27 @@ export default function ProjectDetails(props: projectData) {
           </div>
           <div className={projectStyles["date"]}>
             <Title className="title-thin-small">Date</Title>
-            <div>{props.projectDetails.date}</div>
+            <div style={{ marginBottom: 24 }}>{props.projectDetails.date}</div>
             <Title className="title-thin-small">My Role</Title>
             <div>{props.projectDetails.role}</div>
           </div>
 
           <div className={projectStyles["stack"]}>
             <Title className="title-thin-small">Tech Stack</Title>
-            <div>
+            <div style={{ marginBottom: 24 }}>
               {props.projectDetails.techStack.map((t, i) => (
                 <div key={i}>{t}</div>
               ))}
             </div>
 
-            <Title className="title-thin-small">Design Stack</Title>
+            {props.projectDetails.designStack && (
+              <Title className="title-thin-small">Design Stack</Title>
+            )}
             <div>
-              {props.projectDetails.designStack.map((t, i) => (
-                <div key={i}>{t}</div>
-              ))}
+              {props.projectDetails.designStack &&
+                props.projectDetails.designStack.map((t, i) => (
+                  <div key={i}>{t}</div>
+                ))}
             </div>
           </div>
         </div>

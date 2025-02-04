@@ -8,7 +8,7 @@
 }
 
 .inner-container {
-    margin: 90px 64px;
+    margin: 48px 0;
     background-color: white;
     display: flex; 
     align-items: center;
@@ -18,7 +18,7 @@
 
 .line {
     width: 5px;
-    height: 250px;
+    height: 200px;
     background: #5BD2DC40;
 }
 
@@ -37,5 +37,5 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 120;
+    margin: 48px 64px 120px 64px;
 }

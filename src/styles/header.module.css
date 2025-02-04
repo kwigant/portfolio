@@ -1,7 +1,6 @@
 .header {
     height: 64;
     display: flex;
-    /* justify-content: space-between; */
     width: 100%;
     position: sticky;
     align-items: center;

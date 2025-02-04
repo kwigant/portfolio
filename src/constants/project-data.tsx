@@ -89,6 +89,12 @@ export const allProjectData: projectData[] = [
                     title: 'Figma Prototype',
                     img: '/figma-light-blue.png',
                     link: 'link',
+                },
+
+                {
+                    title: '',
+                    img: '',
+                    link: '',
                 }
             ]
         }
@@ -187,6 +193,126 @@ export const allProjectData: projectData[] = [
                     link: 'link',
                 }
             ]
+        }
+    },
+    {
+        id: 'cx-px-cloud',
+        title: 'CX & PX Cloud',
+        tags: ['Cisco Owned'],
+        img: '/cisco.png',
+        description: 'An interface for Cisco customers / partners to gather insights across Cisco’s entire product portfolio. Featured enhanced analytics throughout the product’s lifecycle as well as permission based information access across clearance levels.',
+        projectDetails: {
+            deliverables: "<div>Collaborated with cross-functional teams to develop design-accurate prototypes for customer and partner demos under tight 1-3 month deadlines.</div><br/><div>Delivered 4-6 web flow prototypes, showcased to 16,000 in-person and 1M online attendees at Cisco Live, receiving highly positive feedback.</div><br/><div>Implemented and aided in the task management of the frontend development and backend API integration, collaborating with 12 designers/developers using SCRUM/agile methodologies.</div>",
+            date: "September 2020 - June 2024",
+            role: "UX Engineer; XDI Team Member",
+            techStack: ['Angular', 'TypeScript', 'REST APIs', 'Nodejs', 'In-House Component Library', 'D3.js Data Visualizations']
+        },
+        approach: [
+            {
+                title: 'Get Design Specs',
+                description: '<div>Given finalized specs from the Cisco CX Design Team for implementation</div>'
+            },
+            {
+                title: 'Divide & Conquer',
+                description: '<div>Work with team to divide specs into development tasks and create working features</div>'
+            },
+            {
+                title: 'Deliver Prototype',
+                description: '<div>Pass off finalized working prototype to be demoed to Customers and Stakeholders </div>'
+            }
+        ], 
+        more: {
+            description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
+        }
+    },
+    {
+        id: 'xdstudio',
+        title: 'XDStudio & CMS',
+        tags: ['Cisco Owned'],
+        img: '/cisco.png',
+        description: 'An internal site intended to monitor of the various changes and updates within CX / PX Cloud, powered by our own Content Management System (CMS) allowing designers and other admins to update XDStudio as they see fit.',
+        projectDetails: {
+            deliverables: "<div>With a small team, built a scalable CMS with React and AWS for internal site management, improving efficiency for admins and designers through streamlined content updates, saving time and money.</div><br/><div>Using the CMS, created an internal blog site to keep track of updates on the customer and partner portals. </div>",
+            date: "January 2022 - December 2023",
+            role: "UX Engineer; XDI Team Member",
+            techStack: ['React', 'TypeScript', 'AWS', 'Nodejs', 'REST APIs']
+        },
+        approach: [
+            {
+                title: 'Determine Priorities',
+                description: '<div>This was a new internal tool that we were building with a small subset of the design team. As a result, specifications would change from time to time. It was our job as developers to pick the tasks that were core to the functionality and not get too caught up with the design and any sudden changes associated. </div>'
+            },
+            {
+                title: 'Divide & Conquer',
+                description: '<div>Within a small team of about three developers we would divide the tasks in order to efficiently implement the product. We focused on core functionality such as CMS page creation and management,  CMS components, and data asset management. </div>'
+            },
+            {
+                title: 'Launch & Maintain',
+                description: '<div>Once the CMS was ready we were able to host our new blog site. We got the functionality to the point where users could create their own page and customize / update it all on their own. After launching all that was left was general maintenance for the site, something I personally did not oversee.  </div>'
+            }
+        ], 
+        more: {
+            description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
+        }
+    },
+    {
+        id: 'cx-platform',
+        title: 'CX Platform',
+        tags: ['Cisco Owned'],
+        img: '/cisco.png',
+        description: 'A platform for both Cisco customers and partners to access information about all their Cisco products and services throughout Cisco’s portfolio. It included insights through data visualization, modular dashboard layouts, and AI assisted search functionality',
+        projectDetails: {
+            deliverables: "<div>Collaborated with team to quickly develop a clickable prototype within about a 5 week deadline</div>",
+            date: "August 2024 - September 2024",
+            role: "UX Engineer; XDI Team Member",
+            techStack: ['React', 'TypeScript', 'GraphQL']
+        },
+        approach: [
+            {
+                title: 'Get Specs',
+                description: '<div>This was a new internal tool that we were building with a small subset of the design team. As a result, specifications would change from time to time. It was our job as developers to pick the tasks that were core to the functionality and not get too caught up with the design and any sudden changes associated. </div>'
+            },
+            {
+                title: 'Divide & Conquer',
+                description: '<div>Within a small team of about three developers we would divide the tasks in order to efficiently implement the product. We focused on core functionality such as CMS page creation and management,  CMS components, and data asset management. </div>'
+            },
+            {
+                title: 'Deliver Prototype',
+                description: '<div>Once the CMS was ready we were able to host our new blog site. We got the functionality to the point where users could create their own page and customize / update it all on their own. After launching all that was left was general maintenance for the site, something I personally did not oversee.  </div>'
+            }
+        ], 
+        more: {
+            description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
+        }
+    },
+    {
+        id: 'houseme',
+        title: 'HouseMe Network LLC',
+        tags: ['My Startup'],
+        img: '/houseme.png',
+        description: 'An ambitious personal project turned start-up - a social network dedicated to helping you with all your rental needs! From search, to sign, and beyond we are a platform dedicated to helping both renters and landlords throughout every step of the process.',
+        projectDetails: {
+            deliverables: "<div>Potential Tenants can search (either in a group or individually) for their future listing, apply, and hear back all on the site</div><br/><div>Landlord and Tenant dedicated portals to help specific user types fulfill their needs.</div><br/><div>Tenants and landlords can each view their current rental and manage any household chores / notifications / messages between housing group and/or landlord</div><br/><div>Stretch Goal: referral system for tenants to recommend other tenants to a property with hopes of mitigating landlord struggle of filling a place quickly.</div><br/><div>Stretch Goal: neighborhood gig economy bulletin board for further user engagement and community connection</div>",
+            date: "April 2019 - March 2024",
+            role: "CEO, Co-Founder, Lead Frontend Engineer & Designer, Head of Finance & Business Operations, Recruiter & Trainer",
+            techStack: ['React', 'TypeScript', 'GraphQL']
+        },
+        approach: [
+            {
+                title: 'Ideate',
+                description: '<div>The idea for HouseMe came from my co-founder and I struggling to find affordable housing as college juniors. Frustrated by the challenges in our town, we decided to create a platform to solve the problem.</div><br/><div> We spent countless hours brainstorming, how to tackle the issues we faced. While the vision was clear, our approach constantly evolved as we learned more.</div><br/><div>Fortunately, finding help was relatively easy at first. Many in our college community sympathized. Though even with help the task was still daunting.</div>'
+            },
+            {
+                title: 'Learn & Iterate',
+                description: '<div>We quickly realized the scale of the challenge. </div><br/><div>I had just switched my major to computer science  and have never built something this big. Google and YouTube became our go-to teachers as we juggled coursework and life.</div><br/><div>Progress was slow, but every win felt monumental. Our small team grew stronger, and we constantly improved the project. </div><br/><div>Even after graduation and the pandemic, we remained committed to making it work.</div>'
+            },
+            {
+                title: 'Test',
+                description: '<div>Over 4+ years, we developed multiple prototypes—Android, React Native, and web—and secured $20k in investments. Each prototype went through usability studies, but we struggled to find a stable direction.</div><br/><div>In hindsight, we could have been a lot more efficient. We started with an app idea but ended up with a website. Expertise was limited, and we had to become our own experts.</div><br/><div>While HouseMe didn’t pan out, I’m proud of what we accomplished. It gave me the confidence to take on any project and a deeper understanding of startup culture.</div>'
+            }
+        ], 
+        more: {
+            description: 'Since this company is no longer active and our servers are no longer up and running, it’s a little difficult to give a live demo of the product. Our designs and research are rather large so I would want to give a proper walk through of the findings if interested. Let’s connect if you would like to discuss HouseMe with me more!',
         }
     }
 ]

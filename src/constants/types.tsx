@@ -20,7 +20,7 @@ export type projectDetails = {
     date: string;
     role: string;
     techStack: string[];
-    designStack: string[];
+    designStack?: string[];
 };
 
 type approach = {
@@ -35,7 +35,7 @@ type projectLink = {
 
 type more = {
     description: string;
-    links: projectLink[]
+    links?: projectLink[]
 }
 
 export type projectData = {

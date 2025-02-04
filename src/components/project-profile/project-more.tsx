@@ -1,16 +1,18 @@
 import { projectData } from "@/constants/types";
 import styles from "@/styles/project.module.css";
 import { Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 
 export default function ProjectMore(props: projectData) {
-  if (props.more)
+  const matches = useMediaQuery("(min-width: 480px)");
+
     return (
       <div className={styles["profile-spacing"]}>
         <Title className="title">Still Want More?</Title>
         <div>{props.more.description}</div>
         <div
-          className="justified-row"
+          className={matches ? "justified-row" : "column"}
           style={{ marginTop: 48, marginBottom: 48, alignItems: "flex-start" }}
         >
           {props.more.links &&

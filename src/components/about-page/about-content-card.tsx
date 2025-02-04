@@ -2,6 +2,7 @@ import { Title } from "@mantine/core";
 import Image from "next/image";
 import parse from "html-react-parser";
 import abtstyle from "../../styles/about.module.css";
+import { useMediaQuery } from '@mantine/hooks';
 
 export type abtCardProps = {
   title: string;
@@ -14,12 +15,22 @@ export type abtCardProps = {
 };
 
 export default function AboutContentCard(props: abtCardProps) {
+  const matches = useMediaQuery('(min-width: 480px)');
+
+  
   return (
     <div className={abtstyle['outer-container']}>
-    <div className={abtstyle.line}></div>
+    {matches && <div className={abtstyle.line}></div>}
  
     <div className={abtstyle['inner-container']} >
-      {props.imgLeft && (
+    {!matches && <Image
+          alt={props.alt}
+          height={props.height/1.5}
+          width={props.width/1.5}
+          src={props.img}
+        /> }
+      
+      {props.imgLeft && matches &&(
         <Image
           alt={props.alt}
           height={props.height}
@@ -33,7 +44,7 @@ export default function AboutContentCard(props: abtCardProps) {
         </Title>
         {parse(props.description)}
       </div>
-      {!props.imgLeft && (
+      {!props.imgLeft && matches && (
         <Image
           alt={props.alt}
           height={props.height}
@@ -41,6 +52,7 @@ export default function AboutContentCard(props: abtCardProps) {
           src={props.img}
         />
       )}
+     
     </div>
     </div>
   );

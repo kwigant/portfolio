@@ -2,8 +2,11 @@ import { projectData } from "@/constants/types";
 import styles from "@/styles/project.module.css";
 import parse from "html-react-parser";
 import { Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function ProjectApproach(props: projectData) {
+  const matches = useMediaQuery("(min-width: 480px)");
+
   function getTitle() {
     switch (props.id ) {
       case 'cx-platform':
@@ -18,7 +21,7 @@ export default function ProjectApproach(props: projectData) {
       <div className={styles['profile-spacing']}>
         <Title className="title">{getTitle()}</Title>
         <div
-          className="justified-row"
+          className={matches ? "justified-row" : "column"}
           style={{ marginBottom: 48, alignItems: 'flex-start' }}
         >
           {props.approach.map((a, i) => {

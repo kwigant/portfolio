@@ -1,46 +1,46 @@
 import { Button, Title } from "@mantine/core";
 import Image from "next/image";
 import abtstyle from "@/styles/about.module.css";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function ContactContentCard() {
+  const matches = useMediaQuery("(min-width: 480px)");
+
   return (
     <div className={abtstyle["contact-container"]}>
-      <div className={abtstyle.line}></div>
-
-     
-        <div className="column" style={{marginRight: 128, marginLeft: 128}}>
-          <Title className="title">Lets Get in Touch!</Title>I am currently
-          looking for new job opportunities! I am in the San Jose / San
-          Francisco Bay Area though I am open to relocating / going remote if
-          necessary. Connect with me if you’re interested!
-          <div className="justified-row" style={{ marginTop: 64 }}>
-            <li>
-              <Image
-                width={44}
-                height={44}
-                alt="linkedin"
-                src="/linkedin.png"
-              />
-              <div style={{ color: "#4B8085", fontWeight: "bold" }}>
-                Linkedin
-              </div>
-              <div>linkedin.com/in/kirsten-wigant</div>
-            </li>
-            <li>
-              <Image width={44} height={44} alt="email" src="/email.png" />
-              <div style={{ color: "#5BD2DC", fontWeight: "bold" }}>Email</div>
-              <div>wigantk@gmail.com</div>
-            </li>
-            <li>
-              <Image width={44} height={44} alt="resume" src="/resume.png" />
-              <div style={{ color: "#FFA984", fontWeight: "bold" }}>Resume</div>
-              <div>Click to Download Resume</div>
-            </li>
-          </div>
+      {matches && <div className={abtstyle.line}></div>}
+      <div className="column" style={{ marginRight: 128, marginLeft: 128 }}>
+        <Title className="title">Lets Get in Touch!</Title>I am currently
+        looking for new job opportunities! I am in the San Jose / San Francisco
+        Bay Area though I am open to relocating / going remote if necessary.
+        Connect with me if you’re interested!
+        <div className="justified-row" style={{ marginTop: 64, flexDirection: matches ? 'row' : 'column', justifyContent: matches ? 'space-between' : undefined }}>
+          <li>
+            <Image width={44} height={44} alt="linkedin" src="/linkedin.png" />
+            <div style={{ color: "#4B8085", fontWeight: "bold" }}>Linkedin</div>
+            <div>linkedin.com/in/kirsten-wigant</div>
+          </li>
+          <li>
+            <Image width={44} height={44} alt="email" src="/email.png" />
+            <div style={{ color: "#5BD2DC", fontWeight: "bold" }}>Email</div>
+            <div>wigantk@gmail.com</div>
+          </li>
+          <li>
+            <Image width={44} height={44} alt="resume" src="/resume.png" />
+            <div style={{ color: "#FFA984", fontWeight: "bold" }}>Resume</div>
+            <div>Click to Download Resume</div>
+          </li>
         </div>
-      
-      <div className={abtstyle.line} style={{ marginTop: 48, height: 100 }}></div>
-      <Button className="show-more-btn">Scroll Up for Less</Button>
+      </div>
+      {matches && (
+        <>
+          <div
+            className={abtstyle.line}
+            style={{ marginTop: 48, height: 100 }}
+          ></div>
+          <Button className="show-more-btn">Scroll Up for Less</Button>
+        </>
+      )}
     </div>
   );
 }

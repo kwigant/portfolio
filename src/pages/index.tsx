@@ -3,8 +3,11 @@ import ActionHeader, { actionHeaderProps } from "@/components/action-header";
 import ContactContentCard from "@/components/about-page/contact";
 import { abtData } from "@/constants/about-data";
 import { Button } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function Home() {
+  const matches = useMediaQuery("(min-width: 480px)");
+
   const actionHeader: actionHeaderProps = {
     title: "Hi I'm Kirsten!",
     subtitle: "Let's Build Something Together",
@@ -19,11 +22,11 @@ export default function Home() {
     <div className="center-container"
     >
       <ActionHeader {...actionHeader} />
-      <Button
+     { matches && <Button
         className="show-more-btn"
       >
         Scroll Down for More
-      </Button>
+      </Button>}
       {abtData.map((ad, i) => {
         return <AboutContentCard key={i} {...ad} />;
       })}

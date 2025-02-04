@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Anchor, Group } from "@mantine/core";
 import classes from "../../styles/header.module.css";
 import { useRouter } from "next/router";
+import { useMediaQuery } from "@mantine/hooks";
 
 const mainLinks = [
   { link: "/", label: "Linkedin" },
@@ -13,6 +14,7 @@ const mainLinks = [
 export function Footer() {
   const [active, setActive] = useState(0);
   const router = useRouter();
+  const matches = useMediaQuery('(min-width: 480px)');
 
   const mainItems = mainLinks.map((item, index) => (
     <Anchor<"a">
@@ -31,7 +33,7 @@ export function Footer() {
   ));
 
   return (
-    <footer className="justified-row">
+    <footer className="justified-row" style={{flexDirection: matches ? 'row' : 'column'}}>
       <div style={{ fontSize: 14 }}>
         © 2025 Kirsten Wigant. All rights reserved.
       </div>

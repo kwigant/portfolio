@@ -16,6 +16,17 @@
     flex-direction: row;
 }
 
+@media (max-width: 480px){
+    .inner-container {
+        margin: 48px 0;
+        background-color: white;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
 .line {
     width: 5px;
     height: 200px;

@@ -3,6 +3,7 @@ import { Anchor, Box, Container, Group } from "@mantine/core";
 import classes from "@/styles/header.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { useMediaQuery } from '@mantine/hooks';
 
 const mainLinks = [
   { link: "/", label: "About" },
@@ -13,6 +14,7 @@ const mainLinks = [
 export function Header() {
   const [active, setActive] = useState(0);
   const router = useRouter();
+  const matches = useMediaQuery('(min-width: 480px)');
 
   const mainItems = mainLinks.map((item, index) => (
     <Anchor<"a">
@@ -51,7 +53,7 @@ export function Header() {
             width={20}
             height={20}
           />
-          Back
+          {matches ? 'Back' : null}
         </button>
       ) : null}
       <Container className={classes.inner}>

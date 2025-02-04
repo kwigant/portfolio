@@ -2,6 +2,7 @@ import { Title } from "@mantine/core";
 import Image from "next/image";
 import parse from "html-react-parser";
 import abtstyle from "../styles/about.module.css";
+import { useMediaQuery } from "@mantine/hooks";
 
 export type actionHeaderProps = {
   title: string;
@@ -14,10 +15,12 @@ export type actionHeaderProps = {
 };
 
 export default function ActionHeader(props: actionHeaderProps) {
+  const matches = useMediaQuery("(min-width: 480px)");
+
   return (
-    <div className={abtstyle['inner-container']} style={{marginTop: 140, marginBottom: 100}}>
+    <div className={abtstyle['inner-container']} style={{marginTop: matches ? 140 : 24, marginBottom: 100}}>
       <Image alt="san jose bay area" height={props.height} width={props.width} src={props.img} />
-      <div className="column" style={{ marginLeft: 48, maxWidth: 660 }}>
+      <div className="column" style={{ marginLeft: matches ? 48 : 0, maxWidth: 600 }}>
         <Title className="title-large">
           {props.title}
         </Title>

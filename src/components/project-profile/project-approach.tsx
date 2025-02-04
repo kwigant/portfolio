@@ -16,7 +16,7 @@ export default function ProjectApproach(props: projectData) {
   }
     return (
       <div>
-        <Title>{getTitle()}</Title>
+        <Title className="title">{getTitle()}</Title>
         <div
           className="justified-row"
           style={{ marginBottom: 48 }}

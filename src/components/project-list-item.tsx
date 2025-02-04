@@ -14,6 +14,8 @@ export default function ProjectListItem(props: project) {
                 <div>{props.description}</div>
                 <div className="row">{props.tags.map((t, i) => <div className={projectStyles.tag} key={i}>{t}</div>)}</div>
             </div>
+            <Image width={30} height={30} alt={props.title} src={'/chevron.png'}/>
+
         </Link>
     )
 }

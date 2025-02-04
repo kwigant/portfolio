@@ -1,9 +1,10 @@
 .header {
     height: 64;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: space-between; */
     width: 100%;
     position: sticky;
+    align-items: center;
     top: 0;
     background-color: white;
     border-bottom: 1px solid #00000020;

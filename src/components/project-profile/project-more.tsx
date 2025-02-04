@@ -7,7 +7,7 @@ export default function ProjectMore(props: projectData) {
   if (props.more)
     return (
       <div>
-         <Title>Still Want More?</Title>
+         <Title className="title">Still Want More?</Title>
          <div>{props.more.description}</div>
           <div
             className="justified-row"

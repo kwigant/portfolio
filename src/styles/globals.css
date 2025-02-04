@@ -95,7 +95,6 @@ h1 {
   border-color: #5BD2DC20;
 }
 
-
 footer {
   border-top: 1px solid #00000020;
   padding-top: 24;
@@ -125,6 +124,12 @@ footer {
   font-size: 64px;
 }
 
+.title-thin-small {
+  color: #4B8085;
+  font-weight: 200;
+  font-size: 16px;
+}
+
 .show-more-btn {
   width: 180;
   padding: 20;
@@ -134,4 +139,18 @@ footer {
   border: none;
   font-family: Poppins, sans-serif;
   background-color: #5BD2DC40;
+}
+
+.back-icon {
+  transform: rotate(180deg);
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #4B8085;
 }

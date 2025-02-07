@@ -25,9 +25,10 @@ export default function AboutContentCard(props: abtCardProps) {
     <div className={abtstyle['inner-container']} >
     {!matches && <Image
           alt={props.alt}
-          height={props.height/1.5}
-          width={props.width/1.5}
+          height={props.height/1.8}
+          width={props.width/1.8}
           src={props.img}
+          style={{marginBottom: matches ? 24 : 0}}
         /> }
       
       {props.imgLeft && matches &&(

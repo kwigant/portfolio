@@ -22,14 +22,14 @@ export default function ProjectApproach(props: projectData) {
         <Title className="title">{getTitle()}</Title>
         <div
           className={matches ? "justified-row" : "column"}
-          style={{ marginBottom: 48, alignItems: 'flex-start' }}
+          style={{ marginBottom: matches ? 48 : 0, alignItems: 'flex-start' }}
         >
           {props.approach.map((a, i) => {
             return (
               <div key={i} className="column" style={{ maxWidth: 320 }}>
                 <div className={styles[`approach-number-${i + 1}`]}>{i + 1}</div>
                 <div className={styles[`approach-text-${i + 1}`]}>{a.title}</div>
-                <div>{parse(a.description)}</div>
+                <div style={{marginBottom: matches ? 0 : 48}}>{parse(a.description)}</div>
               </div>
             );
           })}

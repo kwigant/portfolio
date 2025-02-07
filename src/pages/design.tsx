@@ -12,8 +12,8 @@ export default function Design() {
     description:
       "<div>Design and research is an integral part of my development process. No matter how small or seemingly simple the concept may be, I believe it’s important to <strong>do the research</strong> and <strong>iterate on any and all ideas</strong>.</div><br/><div>I’m primarily self-taught, though I have strengthened my skills over the years with online classes such as the <strong>Google UX Design Course</strong> and personal projects - check out some of my work below! </div>",
     img: "/design-and-research.png",
-    width: matches ? 404 : 302,
-    height: matches ? 350: 250,
+    width: 404,
+    height: 350,
     alt: "Design Image",
   };
 
@@ -22,13 +22,12 @@ export default function Design() {
       <ActionHeader {...actionHeader} />
      { matches && <Button className="show-more-btn">Scroll Down for More</Button>}
       {designData.map((d, i) => (
-        <div key={i} style={{ width: '100%', marginLeft: 104, marginRight: 104 }}>
+        <div key={i} style={{ width: '100%', }}>
           <div className={abtstyle["outer-container"]}>
            { matches && <div className={abtstyle.line}></div>}
           </div>
-          <Title style={{ color: "#4B8085", textAlign: "left", marginLeft: matches ? 96 : 0}}>
-            {d.title}
-          </Title>
+          <Title className="title" style={{marginLeft: matches ? 96 : 0,  textAlign: matches? undefined : 'center'}}>{d.title}</Title>
+         
           {d.list.map((d, i) => (
             <ProjectListItem key={i} {...d} />
           ))}

@@ -6,7 +6,6 @@ import { useMediaQuery } from "@mantine/hooks";
 
 const mainLinks = [
   { link: "/", label: "Linkedin" },
-  { link: "/", label: "Email" },
   { link: "/", label: "Resume" },
   { link: "/credits", label: "Credits" },
 ];
@@ -33,13 +32,16 @@ export function Footer() {
   ));
 
   return (
-    <footer className="justified-row" style={{flexDirection: matches ? 'row' : 'column'}}>
-      <div style={{ fontSize: 14 }}>
+    <footer className="justified-row" style={{ paddingLeft: 24, paddingRight: 24,flexDirection: matches ? 'row' : 'column'}}>
+     { matches && <div style={{ fontSize: 14 }}>
         © 2025 Kirsten Wigant. All rights reserved.
-      </div>
+      </div>}
       <Group gap={8} className={classes.mainLinks}>
         {mainItems}
       </Group>
+      { !matches && <div style={{ fontSize: 14, marginTop: 12, textAlign: 'center' }}>
+        © 2025 Kirsten Wigant. All rights reserved.
+      </div>}
     </footer>
   );
 }

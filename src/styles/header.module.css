@@ -5,8 +5,11 @@
     position: sticky;
     align-items: center;
     top: 0;
+    padding: 0 24px;
     background-color: white;
     border-bottom: 1px solid #00000020;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 .links {
@@ -37,6 +40,39 @@
     }
 }
 
+@media (max-width: 480px){
+  .mainLink {
+    font-size: 16px;
+    margin: 8px 4px;
+    border-bottom: 2px solid transparent;
+    transition:
+      border-color 100ms ease,
+      color 100ms ease;
+  
+    @mixin hover {
+      color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+      text-decoration: none;
+    }
+  
+    &[data-active] {
+      color: #4B8085;
+      font-weight: bold;
+      width: fit-content;
+      border-bottom-color: #4B8085;
+    }
+  }
+}
+
 .mainLink:last-child {
   margin-right: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

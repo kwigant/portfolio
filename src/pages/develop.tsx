@@ -13,8 +13,8 @@ export default function Develop() {
     description:
       "<div>As a UX Engineer with 5 years of industry experience, I’m very adept at turning designs into <strong>seamless, user-friendly web prototypes</strong> - even under tight deadlines.</div><br/><div>I’m used to jumping on to unfamiliar tech stacks and learning on the spot. My specialties include but are not limited to React, React Native, and Angular. Check out some of my work below!</div>",
     img: "/dev-action.png",
-    width: matches ? 404 : 302,
-    height: matches ? 350 : 250,
+    width: 404,
+    height: 350,
     alt: "Development Image",
   };
 
@@ -25,13 +25,13 @@ export default function Develop() {
         <Button className="show-more-btn">Scroll Down for More</Button>
       )}
       {devData.map((d, i) => (
-        <div style={{width: '100%', marginLeft: matches ? 104 :  0, marginRight: matches ? 104 : 0 }} key={i}>
+        <div style={{width: '100%', marginLeft: matches ? 104 :  24, marginRight: matches ? 104 : 24 }} key={i}>
           {matches && (
             <div className={abtstyle["outer-container"]}>
               <div className={abtstyle.line}></div>
             </div>
           )}
-          <Title className="title" style={{marginLeft: matches ? 96 : 0}}>{d.title}</Title>
+          <Title className="title" style={{marginLeft: matches ? 96 : 0,  textAlign: matches? undefined : 'center'}}>{d.title}</Title>
           {d.list.map((d, i) => (
             <ProjectListItem key={i} {...d} />
           ))}

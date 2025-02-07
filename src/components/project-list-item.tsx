@@ -19,16 +19,16 @@ export default function ProjectListItem(props: project) {
         alt={props.title}
         src={props.img}
       />
-      <div className="column" style={{ marginLeft: matches ? 48 : 0, marginRight: matches ? 48 : 0 }}>
+      <div className="column" style={{width: '100%', padding: matches ? 24 : 0, paddingTop: 24, marginLeft: matches ? 48 : 0, marginRight: matches ? 48 : 0 }}>
         {matches && <Title className="title-thin">{props.title}</Title>}
         {!matches && (
-          <div className="justified-row">
+          <div className="justified-row" style={{marginBottom: 24,}}>
             <Title className="title-thin">{props.title}</Title>
             <Image
               width={18}
               height={18}
               alt={props.title}
-              src={"/chevron.png"}
+              src={"/chevron-blue.png"}
             />
           </div>
         )}
@@ -42,7 +42,7 @@ export default function ProjectListItem(props: project) {
         <div style={{  marginBottom: 8 }}>
           {props.description}
         </div>
-        <div className="row">
+        <div className="row" style={{flexWrap: 'wrap', marginBottom: 48}}>
           {props.tags.map((t, i) => (
             <div className={projectStyles.tag} key={i}>
               {t}

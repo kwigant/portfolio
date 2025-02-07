@@ -13,17 +13,18 @@ export default function Home() {
     subtitle: "Let's Build Something Together",
     description:
       "<div>From <strong>Engineering</strong> to <strong>Research</strong> and <strong>Design</strong>, I'm an All-in-One Expert",
-    img: "/placeholder.png",
-    width: 300,
-    height: 300,
+    img: "/portrait.png",
+    width: 400,
+    height: 400,
     alt: "Kirsten Image",
   };
   return (
     <div className="center-container"
     >
       <ActionHeader {...actionHeader} />
-     { matches && <Button
+   {matches &&  <Button
         className="show-more-btn"
+        style={{marginTop: 64}}
       >
         Scroll Down for More
       </Button>}

@@ -8,9 +8,9 @@ export default function ProjectHeader(props: projectData) {
   const matches = useMediaQuery('(min-width: 480px)');
 
   return (
-    <div className={matches ? "row" : "column"} style={{ marginTop: 48, marginBottom: 48, }}>
+    <div className={matches ? "row" : "column"} style={{ alignItems: 'center', marginTop: matches ? 48 : 24, marginBottom: matches ? 48 : 24, }}>
       <Image width={172} height={172} alt={props.title} src={props.img} />
-      <div className="column" style={{ marginLeft: 48 }}>
+      <div className="column" style={{ marginLeft: matches ? 48 : 0 }}>
         <div className="row">
           <Title className="title-large">
             {props.title}

@@ -9,26 +9,26 @@ export default function ContactContentCard() {
   return (
     <div className={abtstyle["contact-container"]}>
       {matches && <div className={abtstyle.line}></div>}
-      <div className="column" style={{ marginRight: 128, marginLeft: 128 }}>
+      <div className="column" style={{ marginRight: matches ? 48 : 0, marginLeft: matches ? 48 : 0 }}>
         <Title className="title">Lets Get in Touch!</Title>I am currently
         looking for new job opportunities! I am in the San Jose / San Francisco
         Bay Area though I am open to relocating / going remote if necessary.
         Connect with me if you’re interested!
-        <div className="justified-row" style={{ marginTop: 64, flexDirection: matches ? 'row' : 'column', justifyContent: matches ? 'space-between' : undefined }}>
-          <li>
+        <div className="justified-row" style={{ marginTop: 64, alignItems: 'center', justifyContent: matches ? 'space-between' : 'center'}}>
+          <li className={abtstyle['contact-item']}>
             <Image width={44} height={44} alt="linkedin" src="/linkedin.png" />
-            <div style={{ color: "#4B8085", fontWeight: "bold" }}>Linkedin</div>
-            <div>linkedin.com/in/kirsten-wigant</div>
+            {matches && <div style={{ color: "#4B8085", fontWeight: "bold" }}>Linkedin</div>}
+            {matches && <div>linkedin.com/in/kirsten-wigant</div>}
           </li>
-          <li>
+          <li className={abtstyle['contact-item']}>
             <Image width={44} height={44} alt="email" src="/email.png" />
-            <div style={{ color: "#5BD2DC", fontWeight: "bold" }}>Email</div>
-            <div>wigantk@gmail.com</div>
+            {matches && <div style={{ color: "#5BD2DC", fontWeight: "bold" }}>Email</div>}
+            {matches && <div>wigantk@gmail.com</div>}
           </li>
-          <li>
+          <li className={abtstyle['contact-item']}>
             <Image width={44} height={44} alt="resume" src="/resume.png" />
-            <div style={{ color: "#FFA984", fontWeight: "bold" }}>Resume</div>
-            <div>Click to Download Resume</div>
+            {matches && <div style={{ color: "#FFA984", fontWeight: "bold" }}>Resume</div>}
+            {matches && <div>Click to Download Resume</div>}
           </li>
         </div>
       </div>

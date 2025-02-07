@@ -16,7 +16,7 @@ export default function Profile() {
   });
 
   return (
-    <div style={{marginRight: matches ? 96 : 0, marginLeft: matches ? 96 : 0}}>
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: matches ? undefined : 'center', alignItems: matches ? undefined : 'center', marginRight: matches ? 96 : 24, marginLeft: matches ? 96 : 24}}>
       <ProjectHeader {...(profile[0] as projectData)} />
       <ProjectDetails {...(profile[0] as projectData)} />
       <ProjectApproach {...(profile[0] as projectData)} />

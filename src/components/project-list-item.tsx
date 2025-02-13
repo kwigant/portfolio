@@ -18,11 +18,12 @@ export default function ProjectListItem(props: project) {
         height={matches ? 180 : 130}
         alt={props.title}
         src={props.img}
+        style={{marginBottom: matches ? 24 : 0}}
       />
-      <div className="column" style={{width: '100%', padding: matches ? 24 : 0, paddingTop: 24, marginLeft: matches ? 48 : 0, marginRight: matches ? 48 : 0 }}>
+      <div className={projectStyles["text-column"]}>
         {matches && <Title className="title-thin">{props.title}</Title>}
         {!matches && (
-          <div className="justified-row" style={{marginBottom: 24,}}>
+          <div className="justified-row" style={{marginBottom: 24}}>
             <Title className="title-thin">{props.title}</Title>
             <Image
               width={18}

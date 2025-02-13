@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function ProjectMore(props: projectData) {
   const matches = useMediaQuery("(min-width: 480px)");
-
+if (props.more)
     return (
-      <div className={styles["profile-spacing"]}>
+      <div className={styles["profile-spacing"]} style={{marginTop: 24}}>
         <Title className="title">Still Want More?</Title>
         <div>{props.more.description}</div>
         <div

@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import { useMediaQuery } from "@mantine/hooks";
 
 const mainLinks = [
-  { link: "/", label: "Linkedin" },
-  { link: "/", label: "Resume" },
+  { link: "https://linkedin.com/in/kirsten-wigant", label: "Linkedin" },
+  { link: "", label: "Resume" },
   { link: "/credits", label: "Credits" },
 ];
 
@@ -14,6 +14,12 @@ export function Footer() {
   const [active, setActive] = useState(0);
   const router = useRouter();
   const matches = useMediaQuery('(min-width: 480px)');
+  const documentUrl = '/kwigant-resume.pdf';
+  
+  function handleLinkClick () {
+    window.open(documentUrl, '_blank');
+  };
+
 
   const mainItems = mainLinks.map((item, index) => (
     <Anchor<"a">
@@ -23,6 +29,7 @@ export function Footer() {
       data-active={index === active || undefined}
       onClick={(event) => {
         event.preventDefault();
+        if (index === 1) handleLinkClick()
         setActive(index);
         router.push(item.link);
       }}

@@ -4,7 +4,7 @@ export const abtData = [
   {
     title: "About Me",
     description:
-      "<div>I was born and raised in San Jose California! I grew up in the heart of <strong>Silicon Valley</strong>, though I never thought I’d end up in tech. As a kid, I just wanted to be outside - not fiddling with the family computer.</div><br/><div>That all changed though when I went to <strong>UC Santa Cruz</strong> and took a mandatory Python class. It was there something clicked and I discovered my passion for web and app development.</div><br/><div>Though I didn’t realize at the time, that class ended up being the turning point that set me on the path to becoming a <strong>Business Owner</strong> and <strong>UX engineer</strong>.</div>",
+      "<div>I was born and raised in San Jose, California! I grew up in the heart of <strong>Silicon Valley</strong>, though I never thought I’d end up in tech. As a kid, I just wanted to be outside - not fiddling with the family computer.</div><br/><div>But that all changed when I went to <strong>UC Santa Cruz</strong> and took a mandatory Python class. It was there something clicked and I discovered my passion for web and app development!</div><br/><div>I didn’t realize at the time, but that class ended up being the turning point that set me on the path to becoming a <strong>Business Owner</strong> and <strong>UX engineer</strong>.</div>",
     img: "/san-jose.png",
     alt: "San Jose Bay Area",
     width: 430,
@@ -24,7 +24,7 @@ export const abtData = [
   {
     title: "Developer on Weekdays",
     description:
-      "<div>Becoming a UX Engineer wasn’t exactly part of the plan. Again, I didn’t even start coding until my first year of college! Yet I love how development lets me bring my ideas to life.</div> <br/><div> I was able to network my way into a <strong>UX Engineer role at Cisco</strong> after a few summers as a Business Analyst Intern. It was here I was able to  hone my skills in full stack rapid prototyping with an emphasis on the <strong>front-end development</strong>, particularly in <strong>Angular</strong> and <strong>React</strong>. </div>",
+      "<div>Becoming an engineer wasn't originally the plan—I didn't even start coding until my first year of college! But I love how development lets me turn ideas into reality.</div> <br/> <div>After a few summers as a Business Analyst Intern, I landed a <strong>UX Engineer role at Cisco</strong>, where I’ve spent the last 5 years refining my skills in full-stack rapid prototyping, focusing on <strong>front-end development</strong>.</div><br/> <div>Most recently, I’ve worked with <strong>React</strong> and <strong>Angular</strong>, but I’m versatile and always eager to tackle new challenges! My peers often call me a <strong>'Jack of all trades'</strong> for how quickly I learn and contribute to any project.</div>",
     img: "/develop.png",
     alt: "Developer",
     width: 404,

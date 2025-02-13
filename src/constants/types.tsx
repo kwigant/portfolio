@@ -47,4 +47,5 @@ export type projectData = {
     projectDetails: projectDetails;
     approach: approach[];
     more: more;
+    imgs: string[]
 }

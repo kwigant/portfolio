@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { useMediaQuery } from '@mantine/hooks';
 import NavMenu from "./nav-menu";
+import EmailButton from "../email-button";
 
 export type links = {
   link: string;
@@ -60,6 +61,7 @@ export function Header() {
          
       }}
     >
+      <div className="row">
       {router.pathname.includes("projects") ||
       router.pathname.includes("credits") ? (
         <button onClick={() => router.back()} className="back-btn">
@@ -67,19 +69,14 @@ export function Header() {
             className="back-icon"
             src="/chevron.png"
             alt="chev"
-            width={20}
-            height={20}
+            width={16}
+            height={16}
           />
           {matches ? 'Back' : null}
         </button>
       ) : null}
-      <div className="row">
-        <Image
-            src="/send.png"
-            alt="contact me"
-            width={24}
-            height={24}/>
-          <div className="title-thin-small" style={{marginLeft: 8}}>Contact Me</div>
+      
+       <EmailButton/>
       </div>
       <div className={classes.inner}>
        

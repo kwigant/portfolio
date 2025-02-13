@@ -47,7 +47,11 @@ export const allProjectData: projectData[] = [
                     link: 'link',
                 }
             ]
-        }
+        }, 
+        imgs: [
+            '/zen-tank-1.svg',
+            '/zen-tank-2.svg'
+        ]
     },
     {
         id: 'tarot-ai',
@@ -97,7 +101,11 @@ export const allProjectData: projectData[] = [
                     link: '',
                 }
             ]
-        }
+        },
+        imgs: [
+            '/tarot-ai-1.png',
+            '/tarot-ai-2.svg',
+        ]
     },
     {
         id: 'portfolio',
@@ -145,7 +153,11 @@ export const allProjectData: projectData[] = [
                     link: 'link',
                 }
             ]
-        }
+        },
+        imgs: [
+            '/portfolio-1.svg',
+            '/portfolio-2.svg',
+        ]
     },
     {
         id: 'poliscope',
@@ -193,7 +205,11 @@ export const allProjectData: projectData[] = [
                     link: 'link',
                 }
             ]
-        }
+        },
+        imgs: [
+            '/poliscope-1.svg',
+            '/poliscope-2.svg'
+        ]
     },
     {
         id: 'cx-px-cloud',
@@ -223,7 +239,9 @@ export const allProjectData: projectData[] = [
         ], 
         more: {
             description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
-        }
+        },
+        imgs: [
+        ]
     },
     {
         id: 'xdstudio',
@@ -253,7 +271,9 @@ export const allProjectData: projectData[] = [
         ], 
         more: {
             description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
-        }
+        },
+        imgs: [
+        ]
     },
     {
         id: 'cx-platform',
@@ -283,7 +303,9 @@ export const allProjectData: projectData[] = [
         ], 
         more: {
             description: 'This project is owned by Cisco and as a result I can’t show any code or visuals associated with this product. However if you would like to chat more about my experience at Cisco and this project in particular then let’s connect!',
-        }
+        },
+        imgs: [
+        ]
     },
     {
         id: 'houseme',
@@ -292,7 +314,7 @@ export const allProjectData: projectData[] = [
         img: '/houseme.png',
         description: 'An ambitious personal project turned start-up - a social network dedicated to helping you with all your rental needs! From search, to sign, and beyond we are a platform dedicated to helping both renters and landlords throughout every step of the process.',
         projectDetails: {
-            deliverables: "<div>Potential Tenants can search (either in a group or individually) for their future listing, apply, and hear back all on the site</div><br/><div>Landlord and Tenant dedicated portals to help specific user types fulfill their needs.</div><br/><div>Tenants and landlords can each view their current rental and manage any household chores / notifications / messages between housing group and/or landlord</div><br/><div>Stretch Goal: referral system for tenants to recommend other tenants to a property with hopes of mitigating landlord struggle of filling a place quickly.</div><br/><div>Stretch Goal: neighborhood gig economy bulletin board for further user engagement and community connection</div>",
+            deliverables: "<div>Potential Tenants can search (either in a group or individually) for their future listing, apply, and hear back all on the site</div><br/><div>Landlord and Tenant dedicated portals to help specific user types fulfill their needs.</div><br/><div>Tenants and landlords can each view their current rental and manage any household chores / notifications / messages between housing group and/or landlord</div><br/><div>Stretch Goal: referral system for tenants to recommend other tenants to a property with hopes of mitigating landlord struggle of filling a place quickly.</div>",
             date: "April 2019 - March 2024",
             role: "CEO, Co-Founder, Lead Frontend Engineer & Designer, Head of Finance & Business Operations, Recruiter & Trainer",
             techStack: ['React', 'TypeScript', 'GraphQL']
@@ -313,6 +335,10 @@ export const allProjectData: projectData[] = [
         ], 
         more: {
             description: 'Since this company is no longer active and our servers are no longer up and running, it’s a little difficult to give a live demo of the product. Our designs and research are rather large so I would want to give a proper walk through of the findings if interested. Let’s connect if you would like to discuss HouseMe with me more!',
-        }
+        },
+        imgs: [
+            '/houseme-1.png',
+            '/houseme-2.png',
+        ]
     }
 ]

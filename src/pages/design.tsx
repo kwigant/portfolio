@@ -5,7 +5,7 @@ import { Button, Title } from "@mantine/core";
 import abtstyle from "@/styles/about.module.css";
 import { useMediaQuery } from "@mantine/hooks";
 export default function Design() {
-  const matches = useMediaQuery('(min-width: 480px)');
+  const matches = useMediaQuery("(min-width: 480px)");
 
   const actionHeader: actionHeaderProps = {
     title: "My Design & Research Process",
@@ -20,27 +20,39 @@ export default function Design() {
   return (
     <div className="center-container">
       <ActionHeader {...actionHeader} />
-     { matches && <Button className="show-more-btn">Scroll Down for More</Button>}
+      {matches && (
+        <Button className="show-more-btn">Scroll Down for More</Button>
+      )}
       {designData.map((d, i) => (
-        <div key={i} style={{ width: '100%', }}>
+        <div key={i} style={{ width: "100%" }}>
           <div className={abtstyle["outer-container"]}>
-           { matches && <div className={abtstyle.line}></div>}
+            {matches && <div className={abtstyle.line}></div>}
           </div>
-          <Title className="title" style={{marginLeft: matches ? 96 : 0,  textAlign: matches? undefined : 'center'}}>{d.title}</Title>
-         
+          <Title
+            className="title"
+            style={{
+              marginLeft: matches ? 96 : 0,
+              textAlign: matches ? undefined : "center",
+            }}
+          >
+            {d.title}
+          </Title>
+
           {d.list.map((d, i) => (
             <ProjectListItem key={i} {...d} />
           ))}
         </div>
       ))}
-      {matches && <>
-      <div className={abtstyle["outer-container"]}>
-        <div className={abtstyle.line} style={{ height: 100 }}></div>
-      </div>
-      <Button className="show-more-btn" style={{ marginBottom: 96 }}>
-        Scroll Up for Less
-      </Button>
-      </>}
+      {matches && (
+        <>
+          <div className={abtstyle["outer-container"]}>
+            <div className={abtstyle.line} style={{ height: 100 }}></div>
+          </div>
+          <Button className="show-more-btn" style={{ marginBottom: 96 }}>
+            Scroll Up for Less
+          </Button>
+        </>
+      )}
     </div>
   );
 }

@@ -46,14 +46,8 @@
 }
 
 .profile-spacing {
-    margin: 96px 0;
+    margin: 64px 0;
 }
-@media (max-width: 480px){
-    .profile-spacing {
-        margin: 0;
-    }
-}
-
 
 /* project details */
 .details-grid {
@@ -81,34 +75,6 @@
     flex-direction: column;
 }
 
-@media (max-width: 480px){
-    .details-grid {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    
-    .deliverables {
-        width: 100%
-    }
-    
-    .date {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 24px;
-    }
-    
-    .stack {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
-
 /* project list item */
 .project-list-item {
     display: flex;
@@ -118,15 +84,10 @@
     margin: 48px 96px;
 }
 
-@media (max-width: 480px){
-    .project-list-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-        margin: 0;
-    }
-    
+.text-column {
+    width: 100%;
+    padding: 24px;
+    margin: 0 48px;
 }
 
 /* project more */
@@ -160,6 +121,13 @@
     background-color: #FFD8BA;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    margin: 48px 0;
+    border-radius: 8px;
+}
+
 @media (max-width: 480px){
     .tag {
         background-color: #5BD2DC40;
@@ -170,5 +138,46 @@
         font-size: 12px;
         margin-left: 4px;
     }
-}
 
+    .project-image {
+        height: 300px;
+    }
+
+    .project-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .details-grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .deliverables {
+        width: 100%
+    }
+    
+    .date {
+        width: 100%;
+        margin-top: 24px;
+    }
+    
+    .stack {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .profile-spacing {
+        margin: 0;
+    }
+
+    .text-column {
+        width: 100%;
+        padding: 24px 0 0 0;
+        margin: 0;
+    }
+}

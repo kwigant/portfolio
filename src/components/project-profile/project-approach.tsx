@@ -17,12 +17,13 @@ export default function ProjectApproach(props: projectData) {
     }
     return "My Approach"
   }
+  if (props.approach)
     return (
-      <div className={styles['profile-spacing']}>
+      <div className={styles['profile-spacing']} style={{marginBottom: 24}}>
         <Title className="title">{getTitle()}</Title>
         <div
           className={matches ? "justified-row" : "column"}
-          style={{ marginBottom: matches ? 48 : 0, alignItems: 'flex-start' }}
+          style={{ marginBottom: 0, alignItems: 'flex-start' }}
         >
           {props.approach.map((a, i) => {
             return (

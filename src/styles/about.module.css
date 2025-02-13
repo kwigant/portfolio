@@ -16,8 +16,6 @@
     flex-direction: row;
 }
 
-
-
 .line {
     width: 5px;
     height: 200px;
@@ -32,7 +30,6 @@
 }
 
 /* Contact Section */
-
 .contact-container {
     width: 100%;
     display: flex;
@@ -43,19 +40,13 @@
     margin: 48px 0;
 }
 
-
 @media (max-width: 480px){
-
     .outer-container {
         margin: 48px 0;
     }
     
     .inner-container {
         margin: 0;
-        background-color: white;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
 
@@ -68,14 +59,10 @@
     }
 
     .text-container {
-        display: flex;
-        flex-direction: column;
         margin: 0;
-        max-width: 660px;
     }
 
     .contact-container {
         margin:  0;
     }
-    
 }

@@ -6,9 +6,10 @@ import { useMediaQuery } from "@mantine/hooks";
 
 export default function ProjectHeader(props: projectData) {
   const matches = useMediaQuery('(min-width: 480px)');
-
+  
+if (props.id)
   return (
-    <div className={matches ? "row" : "column"} style={{ alignItems: 'center', marginTop: matches ? 48 : 24, marginBottom: matches ? 48 : 24, }}>
+    <div className={matches ? "row" : "column"} style={{ alignItems: 'center', marginTop: matches ? 48 : 24, marginBottom: matches ?0 : 24, }}>
       <Image width={172} height={172} alt={props.title} src={props.img} />
       <div className="column" style={{ marginLeft: matches ? 48 : 0 }}>
         <div className="row">

@@ -1,27 +1,23 @@
 import { projectData } from "@/constants/types";
 import styles from "@/styles/project.module.css";
 import { Title } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 
 export default function ProjectMore(props: projectData) {
-  const matches = useMediaQuery("(min-width: 480px)");
 if (props.more)
     return (
       <div className={styles["profile-spacing"]} style={{marginTop: 24}}>
         <Title className="title">Still Want More?</Title>
         <div>{props.more.description}</div>
         <div
-          className={matches ? "justified-row" : "column"}
-          style={{ marginTop: 48, marginBottom: 48, alignItems: "flex-start" }}
+          className={styles['links-row']}
         >
           {props.more.links &&
             props.more.links.map((a, i) => {
               return (
                 <div
                   key={i}
-                  className="column"
-                  style={{ maxWidth: 300, width: "100%" }}
+                  className={styles['link-item']}
                 >
                   {props.more.links && props.more.links[i].img !== "" && (
                     <Image
@@ -34,15 +30,14 @@ if (props.more)
                   <div className={styles[`approach-text-${i + 1}`]}>
                     {a.title}
                   </div>
-                  <div>{a.link}</div>
                 </div>
               );
             })}
           {!props.more.links && (
             <div className={styles.disclaimer}>
               <strong className={styles["disclaimer-bold"]}>
-                Disclaimer:{" "}
-              </strong>{" "}
+                Disclaimer:
+              </strong>
               {props.more.description}
             </div>
           )}

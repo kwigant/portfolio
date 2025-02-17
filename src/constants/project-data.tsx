@@ -32,7 +32,7 @@ export const allProjectData: projectData[] = [
             description: 'This project is a work in progress, check it out how far I’ve gotten! You can view my project code on github as well as click around the figma designs and prototype! We still have yet to crack the AR but everything else (user account creation, tank CRUD operations, add / remove fish and plants) is up and running.',
             links: [
                 {
-                    title: 'GitHub',
+                    title: 'GitHub Repo',
                     img: '/github.png',
                     link: 'link',
                 },
@@ -138,7 +138,7 @@ export const allProjectData: projectData[] = [
             description: 'This project is up and running (you’re reading this aren’t you :P)  - if you want to get a more in depth look at my work, check out the source!',
             links: [
                 {
-                    title: 'Github',
+                    title: 'Github Repo',
                     img: '/github.png',
                     link: 'link',
                 },
@@ -337,8 +337,8 @@ export const allProjectData: projectData[] = [
             description: 'Since this company is no longer active and our servers are no longer up and running, it’s a little difficult to give a live demo of the product. Our designs and research are rather large so I would want to give a proper walk through of the findings if interested. Let’s connect if you would like to discuss HouseMe with me more!',
         },
         imgs: [
-            '/houseme-1.png',
-            '/houseme-2.png',
+            '/houseme-1.svg',
+            '/houseme-2.svg',
         ]
     }
 ]

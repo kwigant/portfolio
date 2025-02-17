@@ -31,7 +31,7 @@ export default function Design() {
           <Title
             className="title"
             style={{
-              marginLeft: matches ? 96 : 0,
+              marginLeft: matches ? 108 : 0,
               textAlign: matches ? undefined : "center",
             }}
           >

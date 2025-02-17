@@ -67,10 +67,10 @@ export function Header() {
         <button onClick={() => router.back()} className="back-btn">
           <Image
             className="back-icon"
-            src="/chevron.png"
+            src="/chevron-white.png"
             alt="chev"
-            width={16}
-            height={16}
+            width={14}
+            height={14}
           />
           {matches ? 'Back' : null}
         </button>

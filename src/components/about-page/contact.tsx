@@ -36,9 +36,9 @@ export default function ContactContentCard() {
         <>
           <div
             className={abtstyle.line}
-            style={{ marginTop: 48, height: 100 }}
+            style={{ marginTop: 48, height: 100,}}
           ></div>
-          <Button className="show-more-btn">Scroll Up for Less</Button>
+          <Button className="show-more-btn" style={{ marginBottom: 64 }}>Scroll Up for Less</Button>
         </>
       )}
     </div>

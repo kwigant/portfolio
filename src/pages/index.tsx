@@ -24,7 +24,6 @@ export default function Home() {
       <ActionHeader {...actionHeader} />
    {matches &&  <Button
         className="show-more-btn"
-        style={{marginTop: 64}}
       >
         Scroll Down for More
       </Button>}

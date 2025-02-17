@@ -80,9 +80,10 @@ li {
 
 
 strong {
-  color: #5BD2DC;
+  padding: 2px 4px;
+  background-color: #5BD2DC40;
+  color: #3C3D3D;
 }
-
 
 h1 {
   color: #4B8085,
@@ -131,9 +132,9 @@ button {
   font-size: 64px;
 }
 
-.title-thin-small {
-  color: #4B8085;
-  font-weight: 200;
+.title-small {
+  color: #3C3D3D;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -150,16 +151,19 @@ button {
 
 .back-icon {
   transform: rotate(180deg);
+  margin-right: 4px;
 }
 
 .back-btn {
-  background-color: #5BD2DC40;
+  background-color: #4B8085;
+  color: white;
   border: none;
+  font-weight: bold;
   display: flex;
   align-items: center;
   font-family: Poppins, sans-serif;
   font-size: 14px;
-  padding: 4px 16px;
+  padding: 4px 16px 4px 12px;
   border-radius: 24px;
   margin-right: 12px;
   cursor: pointer;
@@ -199,5 +203,13 @@ button {
 
   .center-container {
     padding: 24px;
+  }
+  
+  .back-btn {
+    padding: 12px;
+  }
+
+  .back-icon {
+    margin: 0;
   }
 }

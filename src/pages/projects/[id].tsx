@@ -15,10 +15,10 @@ export default function Profile() {
 
   const id = router.query.id;
   const profile = allProjectData.filter((pd) => {
-    return pd.id === id;
+    return pd.id === id || undefined;
   });
 
-  if (profile && profile[0])
+  if (profile !== undefined && profile[0])
     return (
       <div
         style={{

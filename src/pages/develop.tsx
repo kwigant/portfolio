@@ -25,13 +25,13 @@ export default function Develop() {
         <Button className="show-more-btn">Scroll Down for More</Button>
       )}
       {devData.map((d, i) => (
-        <div style={{width: '100%', marginLeft: matches ? 104 :  24, marginRight: matches ? 104 : 24 }} key={i}>
+        <div style={{width: '100%', marginLeft: matches ? 108 :  24, marginRight: matches ? 108 : 24 }} key={i}>
           {matches && (
             <div className={abtstyle["outer-container"]}>
               <div className={abtstyle.line}></div>
             </div>
           )}
-          <Title className="title" style={{marginLeft: matches ? 96 : 0,  textAlign: matches? undefined : 'center'}}>{d.title}</Title>
+          <Title className="title" style={{marginLeft: matches ? 108 : 0,  textAlign: matches? undefined : 'center'}}>{d.title}</Title>
           {d.list.map((d, i) => (
             <ProjectListItem key={i} {...d} />
           ))}

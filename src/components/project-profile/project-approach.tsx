@@ -27,9 +27,11 @@ export default function ProjectApproach(props: projectData) {
         >
           {props.approach.map((a, i) => {
             return (
-              <div key={i} className="column" style={{ maxWidth: 320 }}>
-                <div className={styles[`approach-number-${i + 1}`]}>{i + 1}</div>
-                <div className={styles[`approach-text-${i + 1}`]}>{a.title}</div>
+              <div key={i} className="column" style={{ maxWidth: matches ? 320 : undefined }}>
+                <div className="row" style={{marginBottom: 8}}>
+                  <div className="title-small" style={{marginRight: 8}}>{i + 1}.</div>
+                  <div className={styles[`approach-text-${i + 1}`]}>{a.title}</div>
+                </div>
                 <div style={{marginBottom: matches ? 0 : 48}}>{parse(a.description)}</div>
               </div>
             );

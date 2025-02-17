@@ -1,16 +1,16 @@
 /* project approach */
-.approach-number-1, .approach-number-2, .approach-number-3 {
+/* .approach-number-1, .approach-number-2, .approach-number-3 {
     width: 42px;
     height: 42px;
-    margin: 12px 0;
     border-radius: 30px;
     font-size: 32px;
     font-weight: bold;
     display: flex;
+    margin-right: 12px;
     align-items: center;
     justify-content: center;
-}
-
+} */
+/* 
 .approach-number-1 {
     background-color: #4B8085;
     color: white;
@@ -24,25 +24,27 @@
 .approach-number-3 {
     background-color: #FFA984;
     color: white;
-}
+} */
 
 .approach-text-1,
 .approach-text-2,
 .approach-text-3 {
+    padding: 2px 4px;
+    color: #3C3D3D;
     font-weight: bold;
-    margin-bottom: 12px;
+    background-color: #5BD2DC20;
 }
 
 .approach-text-1 {
-    color: #4B8085;
+    background-color: #4B808520;
 }
 
 .approach-text-2 {
-    color: #5BD2DC;
+    background-color: #5BD2DC30;
 }
 
 .approach-text-3 {
-    color: #FFA984;
+    background-color: #FFA98440;
 }
 
 .profile-spacing {
@@ -81,7 +83,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin: 48px 96px;
+    margin: 48px 108px;
 }
 
 .text-column {
@@ -102,6 +104,21 @@
     font-weight: bold;
 }
 
+.links-row {
+    display: flex;
+    margin: 48px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    width: 100%;
+    align-items: center;
+}
+
 /* project profile */
 .tag, .tag-orange {
     border-radius: 24;
@@ -109,6 +126,8 @@
     font-size: 14px;
     width: fit-content;
     margin: 12 16 0 0;
+    color: #3C3D3D;
+    font-weight: bold;
 }
 
 .tag {
@@ -179,5 +198,11 @@
         width: 100%;
         padding: 24px 0 0 0;
         margin: 0;
+    }
+
+    .approach-text-1,
+    .approach-text-2,
+    .approach-text-3 {
+        font-size: 14px;
     }
 }

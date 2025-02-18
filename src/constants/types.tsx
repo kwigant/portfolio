@@ -27,7 +27,8 @@ type approach = {
     title: string;
     description: string;
 }
-type projectLink = {
+
+export type projectLink = {
     title: string;
     img: string;
     link: string;

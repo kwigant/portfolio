@@ -22,7 +22,7 @@ if (props.id)
             </div>
           ))}
         </div>
-        <div>{props.description}</div>
+        <p>{props.description}</p>
       </div>
     </div>
   );

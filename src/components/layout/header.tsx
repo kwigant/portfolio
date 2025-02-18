@@ -70,6 +70,7 @@ export function Header() {
             src="/chevron-white.png"
             alt="chev"
             width={14}
+
             height={14}
           />
           {matches ? 'Back' : null}

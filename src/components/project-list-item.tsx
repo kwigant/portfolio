@@ -36,13 +36,13 @@ export default function ProjectListItem(props: project) {
 
         {props.subtitle && (
           <>
-            <div>{props.subtitle}</div>
+            <p>{props.subtitle}</p>
             <br />
           </>
         )}
-        <div style={{  marginBottom: 8 }}>
+        <p style={{  marginBottom: 8 }}>
           {props.description}
-        </div>
+        </p>
         <div className="row" style={{flexWrap: 'wrap', marginBottom: 48}}>
           {props.tags.map((t, i) => (
             <div className={projectStyles.tag} key={i}>

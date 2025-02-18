@@ -9,7 +9,7 @@ export const devData: projectList[] = [
                 path: '/projects/zen-tank',
                 title: 'Zen Tank',
                 img: '/zen-tank.png',
-                description: 'A recent personal project of mine that allows you to visualize an ecosystem for your fish! Inspired by my want to own a fish paired with my lack of knowledge on how to properly care for one.  This app helps you build an AR model of your fish tank and figure out optimal communal tank additions and conditions',
+                description: 'An iOS and Android app that allows you to visualize an ecosystem for your fish! Build an AR model of your fish tank and figure out optimal communal tank additions and conditions for your own custom aquascape.',
                 tags: [
                     'React Native', 'Supabase'
                 ]
@@ -19,9 +19,9 @@ export const devData: projectList[] = [
                 path: '/projects/tarot-ai',
                 title: 'Tarot AI',
                 img: '/tarot-ai.png',
-                description: 'A personal project that allows you to identify any tarot card and get it’s associated meaning through AI image detection and text generation. Also includes a stretch goal of integrating AR to demonstrate your reading visually. ',
+                description: 'An iOS app that allows you to identify any tarot card and get it’s associated meaning through AI image detection and text generation, with the ultimate goal of integrating AR to demonstrate your reading visually.',
                 tags: [
-                    'Swift', 'Self-Trained AI'
+                    'Swift', 'Apple CoreML', 'Custom AI Model'
                 ]
             },
             {

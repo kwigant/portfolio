@@ -1,7 +1,7 @@
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import "@/styles/globals.css";
-import { createTheme, MantineProvider, rem } from "@mantine/core";
+import { createTheme, MantineProvider } from "@mantine/core";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 
@@ -15,7 +15,7 @@ const theme = createTheme({
   headings: {
     fontFamily: 'Poppins, sans-serif',
     sizes: {
-      h1: { fontSize: rem(36), },
+      // h1: { fontSize: rem(36), },
     },
   },
 });

@@ -2,7 +2,6 @@ import AboutContentCard from "@/components/about-page/about-content-card";
 import ActionHeader, { actionHeaderProps } from "@/components/action-header";
 import ContactContentCard from "@/components/about-page/contact";
 import { abtData } from "@/constants/about-data";
-import { Button } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
     subtitle: "Let's Build Something Together",
     description:
       "<div>From <strong>Engineering</strong> to <strong>Research</strong> and <strong>Design</strong>, I'm an All-in-One Expert",
-    img: "/portrait.png",
+    img: "/profile.svg",
     width: 400,
     height: 400,
     alt: "Kirsten Image",
@@ -22,11 +21,11 @@ export default function Home() {
     <div className="center-container"
     >
       <ActionHeader {...actionHeader} />
-   {matches &&  <Button
+   {matches &&  <div
         className="show-more-btn"
       >
-        Scroll Down for More
-      </Button>}
+        <div className="title-small">Scroll Down for More</div>
+      </div>}
       {abtData.map((ad, i) => {
         return <AboutContentCard key={i} {...ad} />;
       })}

@@ -21,7 +21,7 @@ export default function Design() {
     <div className="center-container">
       <ActionHeader {...actionHeader} />
       {matches && (
-        <Button className="show-more-btn">Scroll Down for More</Button>
+        <Button className="show-more-btn"> <div className="title-small">Scroll Down for More</div></Button>
       )}
       {designData.map((d, i) => (
         <div key={i} style={{ width: "100%" }}>
@@ -49,7 +49,7 @@ export default function Design() {
             <div className={abtstyle.line} style={{ height: 100 }}></div>
           </div>
           <Button className="show-more-btn" style={{ marginBottom: 96 }}>
-            Scroll Up for Less
+            <div className="title-small">Scroll Up for Less</div>
           </Button>
         </>
       )}

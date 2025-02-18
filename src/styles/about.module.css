@@ -40,6 +40,14 @@
     margin: 48px 0;
 }
 
+.contact-item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Mobile View Styles */
 @media (max-width: 480px){
     .outer-container {
         margin: 48px 0;
@@ -51,10 +59,7 @@
     }
 
     .contact-item {
-        align-items: center;
-        display: flex;
         flex-direction: column;
-        width: 100%;
         margin: 12px 0;
     }
 

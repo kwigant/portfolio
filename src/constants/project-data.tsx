@@ -105,7 +105,7 @@ export const allProjectData: projectData[] = [
     tags: ["Live Website"],
     img: "/project-header-image/portfolio.png",
     description:
-      "The website you are currently on has been designed and built by me! Designed through figma, built on React and hosted on AWS for everyone in the world to view and get to know more about ~yours truly~",
+      "The website you are currently on has been designed and built by me! Designed through figma, built on React and hosted on Vercel for everyone in the world to view and get to know more about ~yours truly~",
     projectDetails: {
       deliverables:
         "<p>Have a responsive website available to the public that demonstrates who I am as both a developer and a designer.</p><br/><p>Showcase all my professional work over the years effectively and concisely as well as give an idea about who I am as a person.</p><br/><p>Display everything in a clean, usable, and enjoyable UI that is also mobile friendly</p>",
@@ -138,7 +138,7 @@ export const allProjectData: projectData[] = [
         {
           title: "Github Repo",
           img: "/visuals/github.png",
-          link: "link",
+          link: "https://github.com/kwigant/portfolio",
         },
         {
           title: "Figma Designs",

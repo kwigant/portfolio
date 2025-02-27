@@ -4,26 +4,36 @@ import abtstyle from "@/styles/about.module.css";
 import { useMediaQuery } from "@mantine/hooks";
 import { projectLink } from "@/constants/types";
 import projectStyles from "@/styles/project.module.css";
+import { handleEmailClick } from "../email-button";
 
 export default function ContactContentCard() {
   const matches = useMediaQuery("(min-width: 480px)");
   const links: projectLink[] = [
     {
       title: "Linkedin",
-      img: "/linkedin.png",
-      link: "link",
+      img: "/visuals/linkedin.png",
+      link: "https://linkedin.com/in/kirsten-wigant",
     },
     {
       title: "Email",
-      img: "/email.png",
+      img: "/visuals/email.png",
       link: "link",
     },
     {
       title: "Resume",
-      img: "/resume.png",
-      link: "link",
+      img: "/visuals/resume.png",
+      link: "documents/Kirsten-Wigant-Resume.pdf",
     },
   ];
+
+  function handleClick(link: projectLink) {
+    switch(link.title) {
+      case "Email": handleEmailClick()
+      case "Resume": window.open(link.link, "_blank")
+      case "Linkedin": window.open(link.link)
+    }
+  }
+ 
   return (
     <div className={abtstyle["contact-container"]}>
       {matches && <div className={abtstyle.line}></div>}
@@ -42,7 +52,7 @@ export default function ContactContentCard() {
         <div className={projectStyles["links-row"]}>
           {links.map((a, i) => {
             return (
-              <div key={i} className={projectStyles["link-item"]} style={{justifyContent: matches ? 'center' : 'flex-start'}}>
+              <div key={i}  className={projectStyles["link-item"]} style={{justifyContent: matches ? 'center' : 'flex-start'}}>
                 {links[i].img !== "" && (
                   <Image
                     alt={a.title}
@@ -51,7 +61,7 @@ export default function ContactContentCard() {
                     src={a.img}
                   ></Image>
                 )}
-                <div className={projectStyles[`approach-text-${i + 1}`]}>
+                <div onClick={()=>handleClick(a)} className={projectStyles[`approach-text-${i + 1}`]}>
                   {a.title}
                 </div>
               </div>

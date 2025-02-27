@@ -10,8 +10,8 @@ export default function Design() {
   const actionHeader: actionHeaderProps = {
     title: "My Design & Research Process",
     description:
-      "<div>Design and research is an integral part of my development process. No matter how small or seemingly simple the concept may be, I believe it’s important to <strong>do the research</strong> and <strong>iterate on any and all ideas</strong>.</div><br/><div>I’m primarily self-taught, though I have strengthened my skills over the years with online classes such as the <strong>Google UX Design Course</strong> and personal projects - check out some of my work below! </div>",
-    img: "/design-and-research.png",
+      "<div>When it comes to design, I’m primarily self-taught - having honed my skills over the years through online courses like the <strong>Google UX Design Course</strong> and numerous <strong>personal projects</strong>. Design and research are integral to my development process, and I believe that even the smallest or simplest concepts deserve <strong>thorough research</strong> and <strong>thoughtful iteration</strong>.</div><br/><div>Take a look at some of my work below!</div>",
+    img: "/visuals/design-and-research.png",
     width: 404,
     height: 350,
     alt: "Design Image",

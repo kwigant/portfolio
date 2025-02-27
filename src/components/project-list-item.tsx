@@ -29,7 +29,7 @@ export default function ProjectListItem(props: project) {
               width={18}
               height={18}
               alt={props.title}
-              src={"/chevron-blue.png"}
+              src={"/icons/chevron-blue.png"}
             />
           </div>
         )}
@@ -52,7 +52,7 @@ export default function ProjectListItem(props: project) {
         </div>
       </div>
       {matches && (
-        <Image width={22} height={22} alt={props.title} src={"/chevron.png"} />
+        <Image width={22} height={22} alt={props.title} src={"/icons/chevron.png"} />
       )}
     </Link>
   );

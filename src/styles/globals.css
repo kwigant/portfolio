@@ -35,6 +35,12 @@ a {
   text-decoration: none;
 }
 
+.cta-link {
+   :hover {
+    text-decoration: underline;
+   }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -49,7 +55,8 @@ main {
 }
 
 li {
-  list-style: none;
+  margin-left: 24px;
+  padding-left: 12px;
 }
 
 .center-container {

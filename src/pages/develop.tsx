@@ -12,14 +12,14 @@ export default function Develop() {
     title: "My Development Process",
     description:
       "<div>As a UX Engineer with 5 years of industry experience, I’m very adept at turning designs into <strong>seamless, user-friendly web prototypes</strong> - even under tight deadlines.</div><br/><div>I’m used to jumping on to unfamiliar tech stacks and learning on the spot. My specialties include but are not limited to <strong>React</strong>, <strong>React Native</strong>, and <strong>Angular</strong>. Check out some of my work below!</div>",
-    img: "/dev-action.png",
+    img: "/visuals/dev-action.png",
     width: 404,
     height: 350,
     alt: "Development Image",
   };
 
   return (
-    <div className="center-container">
+    <div className="center-container" id="develop">
       <ActionHeader {...actionHeader} />
       {matches && (
         <div className="show-more-btn">

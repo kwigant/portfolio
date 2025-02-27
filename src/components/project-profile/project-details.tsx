@@ -10,7 +10,7 @@ export default function ProjectDetails(props: projectData) {
         <div className={projectStyles["details-grid"]}>
           <div className={projectStyles["deliverables"]}>
             <Title className={projectStyles["approach-text-1"]}>Deliverables</Title>
-            <p className={projectStyles["parse-container"]}>{parse(props.projectDetails.deliverables)}</p>
+            <div className={projectStyles["parse-container"]}>{parse(props.projectDetails.deliverables)}</div>
           </div>
           <div className={projectStyles["date"]}>
             <Title className={projectStyles["approach-text-2"]}>Date</Title>
@@ -28,7 +28,7 @@ export default function ProjectDetails(props: projectData) {
             </div>
 
             {props.projectDetails.designStack && (
-              <Title className={projectStyles["approach-text-3"]}>Design Stack</Title>
+              <Title className={projectStyles["approach-text-3"]}>Design Tools</Title>
             )}
             <div className={projectStyles["parse-container"]}>
               {props.projectDetails.designStack &&

@@ -12,7 +12,7 @@ if (props.id)
     <div className={matches ? "row" : "column"} style={{ alignItems: 'center', marginTop: matches ? 48 : 24, marginBottom: matches ?0 : 24, }}>
       <Image width={172} height={172} alt={props.title} src={props.img} />
       <div className="column" style={{ marginLeft: matches ? 48 : 0 }}>
-        <div className="row">
+        <div className={matches ? "row" : "column"} style={{alignItems: 'center'}}>
           <Title className="title-large">
             {props.title}
           </Title>

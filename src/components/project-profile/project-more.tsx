@@ -8,18 +8,19 @@ if (props.more)
     return (
       <div className={styles["profile-spacing"]} style={{marginTop: 24}}>
         <Title className="title">Still Want More?</Title>
-        <div>{props.more.description}</div>
-        <div
+{ props.more.links &&  <div>{props.more.description}</div>}        
+<div
           className={styles['links-row']}
         >
           {props.more.links &&
             props.more.links.map((a, i) => {
               return (
-                <div
+                <a
                   key={i}
+                  href={a.link}
                   className={styles['link-item']}
                 >
-                  {props.more.links && props.more.links[i].img !== "" && (
+                  {a && a.img !== "" && (
                     <Image
                       alt={a.title}
                       width={42}
@@ -30,7 +31,7 @@ if (props.more)
                   <div className={styles[`approach-text-${i + 1}`]}>
                     {a.title}
                   </div>
-                </div>
+                </a>
               );
             })}
           {!props.more.links && (

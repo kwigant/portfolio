@@ -18,6 +18,13 @@ export default function Profile() {
     return pd.id === id || undefined;
   });
 
+  function getImage(index: number) {
+    if (matches) return profile[0].imgs[index]
+    else {
+      const name = profile[0].imgs[index].split('.')[0]
+      return `${name}-mobile-view.svg`
+    }
+  }
   if (profile !== undefined && profile[0])
     return (
       <div
@@ -34,7 +41,7 @@ export default function Profile() {
         <ProjectDetails {...(profile[0] as projectData)} />
         { profile[0].imgs[0] && <Image
           alt="placeholder"
-          src={profile[0].imgs[0]}
+          src={getImage(0)}
           className={projectStyles['project-image']}
            sizes="100vw"
           height={0}
@@ -43,7 +50,7 @@ export default function Profile() {
         <ProjectApproach {...(profile[0] as projectData)} />
         { profile[0].imgs[1] && <Image
           alt="placeholder"
-          src={profile[0].imgs[1]}
+          src={getImage(1)}
           className={projectStyles['project-image']}
            sizes="100vw"
           height={0}

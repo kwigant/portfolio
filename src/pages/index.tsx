@@ -12,7 +12,7 @@ export default function Home() {
     subtitle: "Let's Build Something Together",
     description:
       "<div>From <strong>Engineering</strong> to <strong>Research</strong> and <strong>Design</strong>, I'm an All-in-One Expert",
-    img: "/profile.svg",
+    img: "/visuals/landing-img.svg",
     width: 400,
     height: 400,
     alt: "Kirsten Image",

@@ -14,7 +14,7 @@ export function Footer() {
   const [active, setActive] = useState(0);
   const router = useRouter();
   const matches = useMediaQuery('(min-width: 480px)');
-  const documentUrl = '/kwigant-resume.pdf';
+  const documentUrl = '/documents/Kirsten-Wigant-Resume.pdf';
   
   function handleLinkClick () {
     window.open(documentUrl, '_blank');

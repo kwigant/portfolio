@@ -1,5 +1,7 @@
 import { projectData } from "./types";
-
+/**
+ * Data for all Projects
+ */
 export const allProjectData: projectData[] = [
   {
     id: "zen-tank",
@@ -286,7 +288,7 @@ export const allProjectData: projectData[] = [
         "<p>Within the team, we were given 1 month to deliver a clickable prototype with the following features: </p><ul><li>Create a dashboard providing customers/ partners with product insights and AI-powered search (specs provided).</li><li>Allow users to access information specific to their products across the whole Cisco portfolio.</li></ul>",
       date: "August 2024 - September 2024",
       role: "UX Engineer; XDI Team Member",
-      techStack: ["React", "React Native", "TypeScript", "GraphQL"],
+      techStack: ["React", "TypeScript", "GraphQL"],
     },
     approach: [
       {
